@@ -39,7 +39,7 @@ const Body = ({ spotifyApi, chooseTrack }) => {
   useEffect(() => {
     if (!accessToken) return;
 
-    spotifyApi.getNewReleases({ country: "SE" }).then((res) => {
+    spotifyApi.getNewReleases({ country: "NA" }).then((res) => {
       setNewReleases(
         res.body.albums.items.map((track) => {
           return {
